@@ -2,15 +2,15 @@
 
 A comprehensive, beginner-friendly guide to blocking ads on any device.
 
-🌐 **Live Site**: [Coming Soon - GitHub Pages]
+**Live Site**: https://sidshot.github.io/adblock-guide/
 
 ## Features
 
-- **Step-by-step guides** for Windows, macOS, iOS, and Android
-- **Modern, responsive design** with dark mode
-- **Troubleshooting section** for common issues
-- **FAQ** answering common questions
-- **Zero dependencies** - Pure HTML, CSS, and JavaScript
+- Step-by-step guides for Windows, macOS, iOS, and Android
+- Modern, responsive design with dark mode
+- Troubleshooting section for common issues
+- FAQ answering common questions
+- Zero dependencies - Pure HTML, CSS, and JavaScript
 
 ## Platforms Covered
 
@@ -23,7 +23,7 @@ A comprehensive, beginner-friendly guide to blocking ads on any device.
 
 ## Local Development
 
-Simply open `index.html` in your browser, or use a local server:
+Open `index.html` in your browser, or use a local server:
 
 ```bash
 # Using Python
@@ -35,20 +35,13 @@ npx serve
 
 ## Deployment
 
-This is a static site ready for GitHub Pages:
-
-1. Push to a GitHub repository
-2. Go to Settings → Pages
-3. Select "Deploy from a branch"
-4. Choose `main` branch and `/ (root)` folder
-5. Your site will be live at `https://<username>.github.io/<repo-name>/`
+This is a static site hosted on GitHub Pages.
 
 ## Credits
 
-- Based on recommendations from [FMHY Wiki](https://fmhy.pages.dev)
-- [uBlock Origin](https://github.com/gorhill/uBlock) - The best open-source ad blocker
+- [uBlock Origin](https://github.com/gorhill/uBlock) - Open-source ad blocker
 - [AdGuard](https://adguard.com) - Cross-platform ad blocking solution
 
 ## License
 
-This guide is provided for educational purposes. All trademarks belong to their respective owners.
+MIT License
