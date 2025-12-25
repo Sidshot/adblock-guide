@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete beginner's guide to blocking ads on Windows, macOS, iOS, and Android. Step-by-step instructions for uBlock Origin and AdGuard.">
+    <meta name="keywords" content="adblock, ublock origin, adguard, ad blocker, block ads, ios adblock, android adblock">
+    <title>Adblock Guide - Block Ads on Any Device</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">Adblock<span class="accent">Guide</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#why-adblock">Why Adblock?</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#troubleshooting">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✨ Free & Open Source</div>
+            <h1 class="hero-title">
+                Block Ads on <span class="gradient-text">Any Device</span>
+            </h1>
+            <p class="hero-subtitle">
+                Simple, step-by-step guides to set up ad blockers on Windows, macOS, iOS, and Android. 
+                No technical knowledge required.
+            </p>
+            <div class="hero-cta">
+                <a href="#platforms" class="btn btn-primary">Get Started</a>
+                <a href="#why-adblock" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Platforms</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5 min</span>
+                    <span class="stat-label">Setup Time</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <span class="card-icon">🚫</span>
+                <span class="card-text">No more ads</span>
+            </div>
+            <div class="floating-card card-2">
+                <span class="card-icon">🔒</span>
+                <span class="card-text">Privacy protected</span>
+            </div>
+            <div class="floating-card card-3">
+                <span class="card-icon">⚡</span>
+                <span class="card-text">Faster browsing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Adblock Section -->
+    <section id="why-adblock" class="section why-section">
+        <div class="container">
+            <h2 class="section-title">Why Use an Ad Blocker?</h2>
+            <p class="section-subtitle">Ad blockers do more than just remove annoying ads</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Protection from Malware</h3>
+                    <p>Malicious ads can install viruses and malware on your device. Ad blockers prevent these threats.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Faster Page Loading</h3>
+                    <p>Websites load 2-5x faster without heavy ads, videos, and tracking scripts.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Privacy Protection</h3>
+                    <p>Block trackers that follow you across websites and collect your personal data.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Save Mobile Data</h3>
+                    <p>Ads can consume up to 50% of your mobile data. Block them and save money.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧘</div>
+                    <h3>Better Experience</h3>
+                    <p>Enjoy content without pop-ups, auto-playing videos, or clickbait distractions.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔋</div>
+                    <h3>Longer Battery Life</h3>
+                    <p>Less processing means your device's battery lasts longer.</p>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-icon">⚠️</div>
+                <div class="warning-content">
+                    <h4>Beware of Fake Download Buttons!</h4>
+                    <p>Without an ad blocker, it's hard to spot fake "Download" buttons that lead to malware. Real download buttons are usually small and text-based, while fake ones are large and colorful.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Selection -->
+    <section id="platforms" class="section platforms-section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Platform</h2>
+            <p class="section-subtitle">Select your device to get started with the setup guide</p>
+            
+            <div class="platform-tabs">
+                <button class="platform-tab active" data-platform="windows">
+                    <span class="platform-icon">🪟</span>
+                    <span class="platform-name">Windows</span>
+                </button>
+                <button class="platform-tab" data-platform="macos">
+                    <span class="platform-icon">🍎</span>
+                    <span class="platform-name">macOS</span>
+                </button>
+                <button class="platform-tab" data-platform="ios">
+                    <span class="platform-icon">📱</span>
+                    <span class="platform-name">iOS</span>
+                </button>
+                <button class="platform-tab" data-platform="android">
+                    <span class="platform-icon">🤖</span>
+                    <span class="platform-name">Android</span>
+                </button>
+            </div>
+
+            <!-- Windows Guide -->
+            <div class="platform-content active" id="windows">
+                <div class="platform-header">
+                    <h3>🪟 Windows Setup Guide</h3>
+                    <p>We recommend <strong>uBlock Origin</strong> - the most powerful and trusted ad blocker</p>
+                </div>
+
+                <div class="browser-selector">
+                    <h4>Select Your Browser</h4>
+                    <div class="browser-tabs">
+                        <button class="browser-tab active" data-browser="firefox-win">🦊 Firefox (Recommended)</button>
+                        <button class="browser-tab" data-browser="chrome-win">🌐 Chrome</button>
+                        <button class="browser-tab" data-browser="edge-win">📘 Edge</button>
+                    </div>
+                </div>
+
+                <!-- Firefox Windows -->
+                <div class="browser-content active" id="firefox-win">
+                    <div class="recommendation-badge">✅ Best Choice - Full uBlock Origin Support</div>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open Firefox Browser</h4>
+                                <p>Launch Mozilla Firefox on your Windows computer. If you don't have Firefox, <a href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">download it here</a>.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Go to uBlock Origin Add-on Page</h4>
+                                <p>Click the button below to open the official uBlock Origin page:</p>
+                                <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/" target="_blank" rel="noopener" class="btn btn-install">
+                                    🦊 Open Firefox Add-ons
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Click "Add to Firefox"</h4>
+                                <p>On the uBlock Origin page, click the blue <strong>"Add to Firefox"</strong> button.</p>
+                                <div class="step-visual">
+                                    <div class="mock-button">Add to Firefox</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Confirm Installation</h4>
+                                <p>A popup will appear asking for permissions. Click <strong>"Add"</strong> to confirm.</p>
+                                <div class="permissions-info">
+                                    <p>📋 <strong>Permissions requested:</strong></p>
+                                    <ul>
+                                        <li>Access your data for all websites</li>
+                                        <li>Access browser tabs</li>
+                                    </ul>
+                                    <p class="safe-note">✅ These are safe and required for the ad blocker to work.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>You're Protected! 🎉</h4>
+                                <p>Look for the <strong>red shield icon</strong> 🛡️ in your toolbar. That means uBlock Origin is active and blocking ads!</p>
+                                <div class="success-box">
+                                    <p>✨ <strong>Pro Tip:</strong> Click the shield icon on any page to see how many ads were blocked.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chrome Windows -->
+                <div class="browser-content" id="chrome-win">
+                    <div class="warning-badge">⚠️ Limited - Chrome restricts full ad blocking</div>
+                    
+                    <div class="info-box">
+                        <h4>📢 Important Note About Chrome</h4>
+                        <p>Google has changed Chrome to limit ad blocker capabilities (Manifest V3). <strong>uBlock Origin Lite</strong> works but is less powerful. For full protection, we recommend <a href="#" class="switch-browser" data-target="firefox-win">switching to Firefox</a>.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open Chrome Web Store</h4>
+                                <p>Click the button below to open the uBlock Origin Lite page:</p>
+                                <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" target="_blank" rel="noopener" class="btn btn-install">
+                                    🌐 Open Chrome Web Store
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Click "Add to Chrome"</h4>
+                                <p>Click the blue <strong>"Add to Chrome"</strong> button on the page.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirm Installation</h4>
+                                <p>Click <strong>"Add extension"</strong> in the popup to confirm.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Pin the Extension</h4>
+                                <p>Click the puzzle icon 🧩 in Chrome's toolbar, then click the pin 📌 next to uBlock Origin Lite to keep it visible.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Done!</h4>
+                                <p>The extension is now active. Note that some ads may still appear due to Chrome's limitations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edge Windows -->
+                <div class="browser-content" id="edge-win">
+                    <div class="info-badge">ℹ️ Same as Chrome - Uses uBlock Origin Lite</div>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open Edge Add-ons Store</h4>
+                                <p>Click the button below:</p>
+                                <a href="https://microsoftedge.microsoft.com/addons/detail/ublock-origin-lite/cimighlppcgcoapaliogpjjdehbnofhn" target="_blank" rel="noopener" class="btn btn-install">
+                                    📘 Open Edge Add-ons
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Click "Get"</h4>
+                                <p>Click the <strong>"Get"</strong> button on the page.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirm with "Add Extension"</h4>
+                                <p>Click <strong>"Add extension"</strong> in the popup.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>You're Set!</h4>
+                                <p>The extension will now block most ads in Edge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- macOS Guide -->
+            <div class="platform-content" id="macos">
+                <div class="platform-header">
+                    <h3>🍎 macOS Setup Guide</h3>
+                    <p>Choose your preferred browser for ad blocking</p>
+                </div>
+
+                <div class="browser-selector">
+                    <h4>Select Your Browser</h4>
+                    <div class="browser-tabs">
+                        <button class="browser-tab active" data-browser="safari-mac">🧭 Safari</button>
+                        <button class="browser-tab" data-browser="firefox-mac">🦊 Firefox</button>
+                        <button class="browser-tab" data-browser="chrome-mac">🌐 Chrome</button>
+                    </div>
+                </div>
+
+                <!-- Safari macOS -->
+                <div class="browser-content active" id="safari-mac">
+                    <div class="recommendation-badge">✅ Native macOS Experience</div>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open the App Store</h4>
+                                <p>Click the App Store icon in your Dock or find it in Applications.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Search for "uBlock Origin Lite"</h4>
+                                <p>Type <strong>"uBlock Origin Lite"</strong> in the search bar and press Enter.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Download the App</h4>
+                                <p>Click <strong>"Get"</strong> then <strong>"Install"</strong>. You may need to enter your Apple ID password.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Enable in Safari Settings</h4>
+                                <p>Open Safari → Click <strong>"Safari"</strong> in menu bar → <strong>"Settings"</strong> (or press ⌘,)</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Go to Extensions Tab</h4>
+                                <p>Click the <strong>"Extensions"</strong> tab at the top of Settings.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>Enable uBlock Origin Lite</h4>
+                                <p>Check the box ☑️ next to <strong>"uBlock Origin Lite"</strong> to enable it.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h4>Grant Permissions</h4>
+                                <p>Click on uBlock Origin Lite, then set <strong>"All Websites"</strong> permission to <strong>"Allow"</strong>.</p>
+                                <div class="success-box">
+                                    <p>🎉 You're all set! Safari will now block ads.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firefox macOS -->
+                <div class="browser-content" id="firefox-mac">
+                    <div class="recommendation-badge">✅ Best Protection - Full uBlock Origin</div>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open Firefox</h4>
+                                <p>Launch Firefox. <a href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener">Download Firefox</a> if you don't have it.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Install uBlock Origin</h4>
+                                <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/" target="_blank" rel="noopener" class="btn btn-install">
+                                    🦊 Get uBlock Origin
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Click "Add to Firefox" and Confirm</h4>
+                                <p>Click the button, then click <strong>"Add"</strong> in the permission popup.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Done! 🎉</h4>
+                                <p>Look for the shield icon in your toolbar. You're now protected!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chrome macOS -->
+                <div class="browser-content" id="chrome-mac">
+                    <div class="warning-badge">⚠️ Limited ad blocking due to Chrome restrictions</div>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Open Chrome Web Store</h4>
+                                <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh" target="_blank" rel="noopener" class="btn btn-install">
+                                    🌐 Get uBlock Origin Lite
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Add to Chrome</h4>
+                                <p>Click <strong>"Add to Chrome"</strong> then <strong>"Add extension"</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Done!</h4>
+                                <p>The extension is now active. For better protection, consider <a href="#" class="switch-browser" data-target="firefox-mac">using Firefox</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iOS Guide -->
+            <div class="platform-content" id="ios">
+                <div class="platform-header">
+                    <h3>📱 iOS (iPhone/iPad) Setup Guide</h3>
+                    <p>We recommend <strong>AdGuard</strong> - the best free ad blocker for Safari on iOS</p>
+                </div>
+
+                <div class="info-box highlight">
+                    <h4>📱 Why AdGuard for iOS?</h4>
+                    <p>Safari on iOS doesn't support browser extensions like desktop browsers. AdGuard provides content blocking through iOS's native Content Blocker API, making it the best solution for iPhones and iPads.</p>
+                </div>
+
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open the App Store</h4>
+                            <p>Tap the App Store icon on your iPhone or iPad home screen.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Search for "AdGuard"</h4>
+                            <p>Tap the Search tab and type <strong>"AdGuard"</strong>. Look for the app with the green shield icon.</p>
+                            <a href="https://apps.apple.com/app/adguard-adblock-privacy/id1047223162" target="_blank" rel="noopener" class="btn btn-install">
+                                📱 Open in App Store
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Install the Free App</h4>
+                            <p>Tap <strong>"Get"</strong> to download. Use Face ID, Touch ID, or your password to confirm.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Open Settings App</h4>
+                            <p>Go to your iPhone's <strong>Settings</strong> app (the gear icon ⚙️).</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Navigate to Safari → Extensions</h4>
+                            <p>Scroll down to <strong>"Safari"</strong> → Tap <strong>"Extensions"</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h4>Enable ALL AdGuard Extensions</h4>
+                            <p>You'll see 7-8 AdGuard items. <strong>Turn ON every single one</strong> by tapping each and enabling it.</p>
+                            <div class="extensions-list">
+                                <p>Enable these:</p>
+                                <ul>
+                                    <li>✅ AdGuard — General</li>
+                                    <li>✅ AdGuard — Privacy</li>
+                                    <li>✅ AdGuard — Social</li>
+                                    <li>✅ AdGuard — Annoyances</li>
+                                    <li>✅ AdGuard — Security</li>
+                                    <li>✅ AdGuard — Other</li>
+                                    <li>✅ AdGuard — Custom</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <h4>Set Permissions to "All Websites"</h4>
+                            <p>For each extension, tap it and set <strong>"All Websites"</strong> to <strong>"Allow"</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">8</div>
+                        <div class="step-content">
+                            <h4>Open AdGuard App</h4>
+                            <p>Now open the AdGuard app you installed. It will guide you through initial setup.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">9</div>
+                        <div class="step-content">
+                            <h4>Enable Safari Protection</h4>
+                            <p>In the app, make sure <strong>"Safari protection"</strong> is turned ON (green toggle).</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">10</div>
+                        <div class="step-content">
+                            <h4>You're Protected! 🎉</h4>
+                            <p>Safari will now block ads on all websites. Browse the web ad-free!</p>
+                            <div class="success-box">
+                                <p>💡 <strong>Tip:</strong> Tap "Update filters" in the AdGuard app regularly to get the latest ad blocking rules.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro-tip-box">
+                    <h4>🔥 Recommended Filters to Enable</h4>
+                    <p>In AdGuard app → Filters, enable these for best results:</p>
+                    <ul>
+                        <li><strong>AdGuard Base filter</strong> - Blocks most ads</li>
+                        <li><strong>AdGuard Mobile Ads filter</strong> - Mobile-specific ads</li>
+                        <li><strong>AdGuard Tracking Protection</strong> - Privacy protection</li>
+                        <li><strong>AdGuard Annoyances</strong> - Cookie notices, popups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Android Guide -->
+            <div class="platform-content" id="android">
+                <div class="platform-header">
+                    <h3>🤖 Android Setup Guide</h3>
+                    <p>Two great options: Browser-only or System-wide protection</p>
+                </div>
+
+                <div class="browser-selector">
+                    <h4>Choose Your Option</h4>
+                    <div class="browser-tabs">
+                        <button class="browser-tab active" data-browser="firefox-android">🦊 Firefox + uBlock (Easy)</button>
+                        <button class="browser-tab" data-browser="adguard-android">🛡️ AdGuard (System-wide)</button>
+                    </div>
+                </div>
+
+                <!-- Firefox Android -->
+                <div class="browser-content active" id="firefox-android">
+                    <div class="recommendation-badge">✅ Easiest Option - No extra apps needed</div>
+                    
+                    <div class="info-box">
+                        <p>Firefox is one of the few mobile browsers that supports ad-blocking extensions. This method blocks ads only in Firefox browser.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Install Firefox from Play Store</h4>
+                                <p>If you don't have Firefox, download it:</p>
+                                <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" target="_blank" rel="noopener" class="btn btn-install">
+                                    📥 Get Firefox
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Open Firefox Menu</h4>
+                                <p>Tap the <strong>three dots ⋮</strong> icon in the top-right corner of Firefox.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Tap "Add-ons"</h4>
+                                <p>In the menu, tap <strong>"Add-ons"</strong> (or "Extensions").</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Find uBlock Origin</h4>
+                                <p>Scroll through the recommended add-ons and find <strong>"uBlock Origin"</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Tap the + Button to Add</h4>
+                                <p>Tap the <strong>"+"</strong> icon next to uBlock Origin.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>Grant Permissions</h4>
+                                <p>Tap <strong>"Add"</strong> when asked for permissions.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h4>Done! 🎉</h4>
+                                <p>Ads are now blocked in Firefox! Set Firefox as your default browser for ad-free browsing everywhere.</p>
+                                <div class="success-box">
+                                    <p>💡 <strong>Tip:</strong> Go to Settings → Apps → Default apps → Browser app → Firefox</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AdGuard Android -->
+                <div class="browser-content" id="adguard-android">
+                    <div class="recommendation-badge">🔥 Best Protection - Blocks ads in ALL apps</div>
+                    
+                    <div class="info-box highlight">
+                        <h4>⚠️ Important</h4>
+                        <p>AdGuard must be downloaded from their website (not Play Store) because Google doesn't allow system-wide ad blockers in the Play Store.</p>
+                    </div>
+
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Download AdGuard APK</h4>
+                                <p>Go to AdGuard's official website to download:</p>
+                                <a href="https://adguard.com/en/adguard-android/overview.html" target="_blank" rel="noopener" class="btn btn-install">
+                                    🛡️ Get AdGuard for Android
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Allow Installation from Unknown Sources</h4>
+                                <p>When prompted, allow your browser to install apps. This is safe for official AdGuard downloads.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Install the APK</h4>
+                                <p>Open the downloaded file and tap <strong>"Install"</strong>.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Open AdGuard</h4>
+                                <p>Launch the AdGuard app and follow the setup wizard.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>Enable Protection</h4>
+                                <p>Toggle the main protection switch ON. AdGuard will create a local VPN to filter traffic.</p>
+                                <div class="info-note">
+                                    <p>ℹ️ This VPN is local only - your traffic doesn't go through any external servers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h4>All Done! 🎉</h4>
+                                <p>AdGuard will now block ads in Chrome, games, apps, and everywhere else!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting Section -->
+    <section id="troubleshooting" class="section troubleshooting-section">
+        <div class="container">
+            <h2 class="section-title">Troubleshooting</h2>
+            <p class="section-subtitle">Common issues and how to fix them</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🤔 Ads are still appearing after installation</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <ol>
+                            <li><strong>Refresh the page</strong> - Sometimes you need to reload for changes to take effect</li>
+                            <li><strong>Check if extension is enabled</strong> - Click the extension icon and make sure it's ON</li>
+                            <li><strong>Update filter lists</strong> - Open uBlock Origin settings → Filter lists → Update Now</li>
+                            <li><strong>Clear browser cache</strong> - Old cached ads might still show up</li>
+                            <li><strong>Some ads are "anti-adblock"</strong> - A few sites detect ad blockers. You may see a message asking you to disable it.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>💔 A website is broken or not loading properly</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Sometimes ad blockers can accidentally break website features. Here's how to fix it:</p>
+                        <ol>
+                            <li><strong>Disable for this site only:</strong>
+                                <ul>
+                                    <li>Click the uBlock Origin icon</li>
+                                    <li>Click the big power button 🔴 to disable it for this site</li>
+                                    <li>Refresh the page</li>
+                                </ul>
+                            </li>
+                            <li><strong>If that doesn't help:</strong> The issue might not be related to ad blocking. Try another browser.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>👻 The extension icon disappeared</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p><strong>For Chrome/Edge:</strong></p>
+                        <ol>
+                            <li>Click the puzzle piece icon 🧩 in the toolbar</li>
+                            <li>Find uBlock Origin in the list</li>
+                            <li>Click the pin 📌 icon to keep it visible</li>
+                        </ol>
+                        <p><strong>For Firefox:</strong></p>
+                        <ol>
+                            <li>Right-click on the toolbar</li>
+                            <li>Click "Customize Toolbar"</li>
+                            <li>Drag uBlock Origin to your toolbar</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📱 AdGuard is using too much battery (iOS/Android)</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>This is usually a display issue. The battery usage shown is for all filtered app traffic, not AdGuard itself.</p>
+                        <p><strong>To reduce actual battery usage:</strong></p>
+                        <ol>
+                            <li>Use "Low resource mode" in AdGuard settings</li>
+                            <li>Disable protection when not needed</li>
+                            <li>Use fewer filter lists</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🎬 YouTube ads are still playing</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>YouTube is constantly updating their ad delivery. Here's how to fix it:</p>
+                        <ol>
+                            <li><strong>Update your filter lists</strong> - This often fixes YouTube ad issues</li>
+                            <li><strong>Use Firefox</strong> - Full uBlock Origin on Firefox blocks YouTube ads better</li>
+                            <li><strong>On mobile:</strong> Use YouTube ReVanced (Android) or watch in Firefox with uBlock Origin</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Is uBlock Origin safe to use?</h4>
+                    <p>Yes! uBlock Origin is open-source, meaning anyone can inspect its code. It's trusted by millions of users and security experts worldwide. It doesn't collect any personal data.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Will ad blockers break websites?</h4>
+                    <p>Rarely. Most websites work perfectly fine. If you encounter issues, you can easily disable the ad blocker for that specific site with one click.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What's the difference between uBlock Origin and uBlock Origin Lite?</h4>
+                    <p><strong>uBlock Origin</strong> is the full version with maximum blocking power (Firefox only now). <strong>uBlock Origin Lite</strong> is a limited version that works on Chrome/Edge due to Google's restrictions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do I still need antivirus if I have an ad blocker?</h4>
+                    <p>Ad blockers help prevent malware from ads, but they're not a replacement for antivirus. Use Windows Defender (built into Windows) for basic protection.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Is it legal to use ad blockers?</h4>
+                    <p>Yes, using ad blockers is completely legal. You have the right to control what content loads in your browser.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Why is Firefox recommended over Chrome?</h4>
+                    <p>Google (Chrome's maker) earns money from ads, so they've limited how well ad blockers can work in Chrome. Firefox has no such restrictions and supports full ad blocking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🛡️</span>
+                    <span class="logo-text">Adblock<span class="accent">Guide</span></span>
+                    <p>Free, simple guides to block ads on any device.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#platforms">Platform Guides</a></li>
+                        <li><a href="#troubleshooting">Troubleshooting</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-resources">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/gorhill/uBlock" target="_blank" rel="noopener">uBlock Origin GitHub</a></li>
+                        <li><a href="https://adguard.com" target="_blank" rel="noopener">AdGuard Official</a></li>
+                        <li><a href="https://fmhy.pages.dev" target="_blank" rel="noopener">FMHY Wiki</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Made with ❤️ for a better internet experience</p>
+                <p class="disclaimer">This guide is not affiliated with uBlock Origin or AdGuard. All trademarks belong to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
